@@ -54,3 +54,9 @@ greetStrings(2)= "world!\n"
 for(i <- 0 to 2)
   print(greetStrings(i))
 
+val oneTwo = List(1,2)
+val threeFour = List(3,4)
+val oneTwoThreeFour=oneTwo ::: threeFour
+println (oneTwo + " and " + threeFour + " were not mutated.")
+println ("Thus, " + oneTwoThreeFour + " is a new list")
+
