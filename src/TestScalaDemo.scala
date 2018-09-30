@@ -17,10 +17,30 @@ object TestScalaDemo extends App {
     println(pair._2)*/
 
 
-  var jetSet = Set("boxing", "air")
+/*  var jetSet = Set("boxing", "air")
   jetSet +="Lear"
 //  println(jetSet)
 
   val romanNumeral=Map(1->"I",2->"Ⅱ",3->"Ⅲ")
-  println(romanNumeral)
+  println(romanNumeral)*/
+  def printArgs(args:Array[String]):Unit={
+    var i=0
+    while (i<args.length){
+      println(args(i))
+      i+=1
+    }
+  }
+
+
+ def printAgs(args:Array[String]):Unit={
+    args.foreach(println)
+  }
+
+
+  val strings=new Array[String](3)
+  strings(0)="a"
+  strings(1)="b"
+  strings(2)="c"
+
+  printAgs(strings)
 }
